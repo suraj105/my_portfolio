@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Background -->
+  <rect width="300" height="200" rx="20" fill="#0f0f0f" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Text -->
+  <text x="50%" y="60%" text-anchor="middle"
+        font-family="Orbitron, Arial, sans-serif"
+        font-weight="700" font-size="100"
+        fill="#f5f5f5" letter-spacing="2">SR</text>
+  
+  <!-- Decorative line -->
+  <path d="M40 150 L260 150" stroke="#f5f5f5" stroke-width="2" opacity="0.2"/>
+</svg>
