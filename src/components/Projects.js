@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import placeHolder from "../assets/img/project_placeholder.svg";
+import microservicesPlaceHolder from "../assets/img/img_placeholder_microservices.png";
 import javaPlaceholder from "../assets/img/img_placeholder_java.png"
 import dashPlaceholder from "../assets/img/img_placeholder_dash.png"
 import apexPlaceholder from "../assets/img/img_placeholder_apexshopper.png"
@@ -21,7 +21,7 @@ export const Projects = () => {
     {
      title: " E-Commerce",
       description: "Microservice E-commerce website made using React and springboot running in a docker container , and Rabbitmq for messaging",
-      imgUrl: placeHolder,
+      imgUrl: microservicesPlaceHolder,
       githubUrl: "https://github.com/orgs/KBE-2023/repositories",
     },
     {
@@ -61,7 +61,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>A collection of projects demonstrating creativity, clean design, and practical web development skills using modern technologies.</p>
+                <p>A collection of projects demonstrating creativity, clean design, and practical web development/programming skills using modern technologies.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
