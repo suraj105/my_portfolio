@@ -9,18 +9,18 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: " pending ",
-      description: "pending",
+      title: " Apex Shoppers ",
+      description: "E-Commerce website made using React, next.js, tailwind css, Stripe , next auth , firestore , firebase and redux.",
       imgUrl: placeHolder,
     },
     {
-     title: " pending ",
-      description: "pending",
+     title: " E-Commerce",
+      description: "Microservice E-commerce website made using React and springboot running in a docker container , and Rabbitmq for messaging",
       imgUrl: placeHolder,
     },
     {
-     title: " pending ",
-      description: "pending",
+     title: " Publication Cost",
+      description: "A comprehensive analysis of publication cost with help of dash and python webscrapping",
       imgUrl: placeHolder,
     },
   ];
@@ -38,13 +38,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Web Development</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Java</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Php</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
