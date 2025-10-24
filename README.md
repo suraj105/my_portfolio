@@ -1,25 +1,31 @@
-This project was bootstrapped with [Create React App]
-Built using:
+# 💼 My Portfolio Website
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+A modern, responsive personal portfolio website built with **React**, **Bootstrap**, and **CSS animations**, showcasing my projects, skills, and contact details.
 
-In the /personal-portfolio, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+👉 [View Live on Vercel](https://my-portfolio.vercel.app)  
+*(Deployed automatically from the `main` branch using Vercel.)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
+## 🧠 Features
 
-### `npm run build`
+- 🎨 **Modern UI** – Responsive and visually clean design  
+- 🌍 **Multi-language support** – English and German-ready CLI sections  
+- 🧩 **Project Tabs** – Organized by category (Web, Java, PHP)  
+- 🖱️ **Clickable Project Cards** – Each card links directly to its GitHub repository  
+- ⚡ **Smooth Animations** – Built with `animate.css` and `react-on-screen`  
+- 💬 **Contact Section** – Styled form ready for EmailJS or Formspree integration  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧱 Built With
+
+- [React](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Animate.css](https://animate.style/)
+- [React On Screen](https://www.npmjs.com/package/react-on-screen)
+- [Vercel](https://vercel.com/) (deployment)
