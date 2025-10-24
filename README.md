@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built with **React**, **Bootstra
 
 ## 🚀 Live Demo
 
-👉 [View Live on Vercel](https://my-portfolio.vercel.app)  
+👉 [View Live on Vercel](https://suraj105-portfolio.vercel.app)  
 *(Deployed automatically from the `main` branch using Vercel.)*
 
 ---
