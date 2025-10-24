@@ -1,29 +1,56 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import placeHolder from "../assets/img/project_placeholder.svg";
+import javaPlaceholder from "../assets/img/img_placeholder_java.png"
+import dashPlaceholder from "../assets/img/img_placeholder_dash.png"
+import apexPlaceholder from "../assets/img/img_placeholder_apexshopper.png"
+import phpPlaceholder from "../assets/img/img_placeholder_php.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const webProjects = [
     {
       title: " Apex Shoppers ",
       description: "E-Commerce website made using React, next.js, tailwind css, Stripe , next auth , firestore , firebase and redux.",
-      imgUrl: placeHolder,
+      imgUrl: apexPlaceholder,
+      githubUrl: "https://github.com/suraj105/apex-shoppers",
     },
     {
      title: " E-Commerce",
       description: "Microservice E-commerce website made using React and springboot running in a docker container , and Rabbitmq for messaging",
       imgUrl: placeHolder,
+      githubUrl: "https://github.com/orgs/KBE-2023/repositories",
     },
     {
      title: " Publication Cost",
       description: "A comprehensive analysis of publication cost with help of dash and python webscrapping",
-      imgUrl: placeHolder,
+      imgUrl: dashPlaceholder,
+      githubUrl: "https://github.com/suraj105/publication_cost_dash",
+
     },
   ];
+
+    const javaProjects = [
+    {
+      title: " Warehouse management system ",
+      description: "Java gui based warehouse management system to keep track of items, including io , net , simulations , TCP/UDP communications",
+      imgUrl: javaPlaceholder,
+      githubUrl: "https://github.com/suraj105/prg3new",
+    },
+  ];
+
+  const phpProjects = [
+    {
+      title: " Plugin development",
+      description: "Export-orders plugin development for shopware 6 with php",
+      imgUrl: phpPlaceholder,
+      githubUrl: "https://github.com/suraj105/SW6-Export-Orders-Filter",
+    },
+  ];
+  
 
   return (
     <section className="project" id="projects">
@@ -51,7 +78,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          webProjects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -62,11 +89,33 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                       <Row>
+                        {
+                          javaProjects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                        {
+                          phpProjects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
